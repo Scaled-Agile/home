@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SacHome</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/kissui.scrollanim/0.3.0/scrollanim.min.css" rel="stylesheet">
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/kissui.scrollanim/0.3.0/scrollanim.min.js"></script>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>
