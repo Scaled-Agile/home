@@ -17,76 +17,15 @@
 </header>
 <section class="idea">
   <div class="container">
-    <div class="title_group" data-kui-anim="fadeIn" data-kui-event="bottom">
+    <div class="title_group">
       <h2 class="title">Idea • Action</h2>
       <p class="sub_title">An idea about making a better world</p>
     </div>
-    <div class="detail">
+    <div class="detail" data-kui-anim="fadeIn" data-kui-event="bottom">
       <p class="question">How comes Scaled Agile Consulting</p>
       <p class="answer">We used to work together, we've been solving complex technical problems, we are talented, skilled and extremely passionate about design, code, business analysis, moreover, we always have a same feeling, which is we should not waste our intelligence, why not to be helpful? then comes Scaled Agile Consulting</p>
     </div>
   </div>
 </section>
-
-<section class="services">
-  <div class="title_group" data-kui-anim="fadeIn" data-kui-event="bottom">
-    <h2 class="title">Services</h2>
-    <p class="sub_title">provide the best services as possible as we can</p>
-  </div>
-  <div class="service_group">
-    <div class="service">
-      <%= image_tag("ui.png", size: "230x230", class: 'service_icon') %>
-      <div class="description">
-        <h2 class="service_name">UI Design</h2>
-        <p class="sub_name">user experience design</p>
-        <ul class="detail">
-          <li><span>Website</span></li>
-          <li><span>Mobile</span></li>
-          <li><span>Icon</span></li>
-          <li><span>Poster</span></li>
-          <li><span>Photoshop</span></li>
-        </ul>
-      </div><!-- description -->
-    </div><!-- service -->
-    <div class="service">
-      <%= image_tag("architect.jpeg", size: "230x230", class: 'service_icon') %>
-      <div class="description">
-        <h2 class="service_name">Architecture</h2>
-        <p class="sub_name">System Architecture</p>
-        <ul class="detail">
-          <li><span>Micro Service Architecture</span></li>
-          <li><span>Enterprise Architecture</span></li>
-          <li><span>Redesign Legacy System</span></li>
-        </ul>
-      </div><!-- description -->
-    </div><!-- service -->
-    <div class="service">
-      <%= image_tag("development.jpeg", size: "230x230", class: 'service_icon') %>
-      <div class="description">
-        <h2 class="service_name">Development</h2>
-        <p class="sub_name">Delivery for sure</p>
-        <ul class="detail">
-          <li><span>Enterprise Website</span></li>
-          <li><span>ERP System</span></li>
-          <li><span>E-Commerce Website</span></li>
-          <li><span>Android App</span></li>
-        </ul>
-      </div><!-- description -->
-    </div><!-- service -->
-    <div class="service">
-      <%= image_tag("support.png", size: "230x230", class: 'service_icon') %>
-      <div class="description">
-        <h2 class="service_name">Opperation Support</h2>
-        <p class="sub_name"></p>
-        <ul class="detail">
-          <li><span>Integration</span></li>
-          <li><span>Deployment</span></li>
-          <li><span>DevOps</span></li>
-        </ul>
-      </div><!-- description -->
-    </div><!-- service -->
-  </div><!-- row -->
-</section>
-<section class="advantage">'
-  
-</section>
+<%= render 'shared/services' %>
+<%= render 'shared/advantages' %>
