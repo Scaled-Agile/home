@@ -1,3 +1,162 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), image-url("background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  background-position: 50% 50%;
+  height: 680px;
+  position: relative;
+
+  .logo {
+    text-align: center;
+    img {
+      width: 150px;
+      margin-top: 30px;
+    }
+    .name {
+      font-weight: bold;
+      font-style: normal;
+      font-size: 18px;
+      color: #fff;
+    }
+  }
+  .title_group {
+    text-align: center;
+    margin: 100px 0 20px 0;
+    .title {
+      line-height: 1.2;
+      font-style: normal;
+      font-size: 54px;
+      color: #fff;
+    }
+    .sub_title {
+      line-height: 1.45;
+      font-style: normal;
+      font-size: 20px;
+      color: #fff;
+    }
+    #submit_button {
+      height: 70px;
+      width: 260px;
+      margin-top: 40px;
+      color: #fff;
+      font-size: 22px;
+      font-weight: bold;
+      border: 2px solid #fff;
+      &:hover {
+        background: rgba(255,255,255,0.1);
+      }
+    }
+  }
+  .bright-arrow {
+    position: absolute;
+    bottom: 0;
+    height: 25px;
+    width: 100%;
+    z-index: 100;
+    display: block;
+    text-align: center;
+
+    .a1 {
+      left: 0;
+      border-right-color: transparent !important;
+    }
+    .a2 {
+      right: 0;
+      border-left-color: transparent !important;
+    }
+    .a1, .a2 {
+      display: block;
+      position: absolute;
+      border-color: rgb(234, 236, 240);
+      bottom: 0;
+      width: 50%;
+      height: 0;
+      box-sizing: border-box;
+      border: 25px solid transparent;
+      border-top: 0;
+    }
+  }
+}
+
+section {
+  position: relative;
+  outline: 0;
+  text-align: center;
+  padding: 80px 0;
+  line-height: 1.45;
+  color: #555;
+  .title {
+    line-height: 1.2;
+    font-size: 36px;
+    color: #222;
+  }
+  .sub_title {
+    color: #be4488;
+    font-size: 20px;
+  }
+  .title_group {
+    margin-bottom: 50px;
+  }
+}
+
+section.idea {
+  background-color: rgb(234, 236, 240);
+  .detail {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+    .question {
+      font-size: 26px;
+      color: #222;
+      margin-bottom: 10px;
+    }
+    .answer {
+      font-size: 20px;
+    }
+  }
+}
+
+section.services {
+    width: 1120px;
+    margin: 0 auto;
+
+  .service {
+    float: left;
+    width: 22%;
+    margin-right: 3%;
+  }
+  .description {
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 3px;
+    box-shadow: none;
+    padding: 22px 26px;
+    width: 192px;
+  }
+  .service_name {
+    font-size: 24px;
+    color: #222;
+    margin-bottom: 10px;
+  }
+  .sub_name {
+    font-size: 16px;
+    color: #be4488;
+    margin-bottom: 10px;
+  }
+  ul span {
+    position: relative;
+    left: -10px;
+  }
+  li {
+    list-style-type: none;
+    word-wrap: break-word;
+    text-align: center;
+    text-align: left;
+    list-style-position: inside;
+    position: relative;
+    left: 16px;
+  }
+}
