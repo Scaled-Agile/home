@@ -1,5 +1,5 @@
 $(function(){
-  $("#submit_button").click(function(){
+  $(".submit_button").click(function(){
     swal({
       title: 'Your Wish',
       confirmButtonText: 'Submit',
