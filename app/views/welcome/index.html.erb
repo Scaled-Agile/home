@@ -15,17 +15,19 @@
     <div class="a2" style="border-color: rgb(234, 236, 240);"></div>
   </div>
 </header>
-<section class="idea">
-  <div class="container">
-    <div class="title_group">
-      <h2 class="title">Idea • Action</h2>
-      <p class="sub_title">An idea about making a better world</p>
-    </div>
-    <div class="detail" data-kui-anim="fadeIn" data-kui-event="bottom">
-      <p class="question">How comes Scaled Agile Consulting</p>
-      <p class="answer">We used to work together, we've been solving complex technical problems, we are talented, skilled and extremely passionate about design, code, business analysis, moreover, we always have a same feeling, which is we should not waste our intelligence, why not to be helpful? then comes Scaled Agile Consulting</p>
-    </div>
-  </div>
-</section>
+
+<%= render 'shared/idea' %>
 <%= render 'shared/services' %>
 <%= render 'shared/advantages' %>
+<%= render 'shared/consultants' %>
+
+<div class="end" data-kui-anim="fadeIn" data-kui-event="bottom">
+  <div class="container">
+    <h1>Work with us</h1>
+    <p>Want to know more? Or can not wait working with us?</p>
+    <button id="submit_button">START</button>
+  </div>
+</div>
+<footer>
+  <p class="copywrite">© 2017</p>
+</footer>
