@@ -6,26 +6,54 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: transparent;
-  height: 720px;
+  @media (min-width: 1000px) {
+    height: 720px;
+  }
+  @media (max-width: 1000px) {
+    background-position: 50% 50%;
+    height: 1560px;
+  }
   position: relative;
 
   .logo {
     text-align: center;
     img {
-      width: 150px;
-      margin-top: 30px;
+      @media (min-width: 1000px) {
+        margin-top: 30px;
+        width: 150px;
+      }
+      @media (max-width: 1000px) {
+        margin-top: 100px;
+        width: 400px;
+      }
     }
     .name {
+      @media (min-width: 1000px) {
+        font-size: 18px;
+      }
+      @media (max-width: 1000px) {
+        font-size: 40px;
+      }
       font-weight: bold;
       font-style: normal;
-      font-size: 18px;
       color: #fff;
     }
   }
   .title_group {
     text-align: center;
-    margin: 140px 0 20px 0;
+    @media (min-width: 1000px) {
+      margin: 140px 0 20px 0;
+    }
+    @media (max-width: 1000px) {
+      margin: 340px 0 20px 0;
+    }
     .title {
+      @media (min-width: 1000px) {
+        font-size: 54px;
+      }
+      @media (max-width: 1000px) {
+        font-size: 84px;
+      }
       line-height: 1.2;
       font-style: normal;
       font-size: 54px;
@@ -36,15 +64,33 @@ header {
       font-style: normal;
       font-size: 20px;
       color: #fff;
+      @media (min-width: 1000px) {
+        font-size: 20px;
+      }
+      @media (max-width: 1000px) {
+        font-size: 34px;
+      }
     }
     .submit_button {
+      @media (min-width: 1000px) {
+        height: 70px;
+        width: 260px;
+        font-size: 22px;
+        border: 2px solid #fff;
+        margin-top: 40px;
+      }
+      @media (max-width: 1000px) {
+        height: 140px;
+        width: 460px;
+        font-size: 42px;
+        border: 6px solid #fff;
+        border-radius: 10px;
+        margin-top: 80px;
+      }
       height: 70px;
       width: 260px;
-      margin-top: 40px;
       color: #fff;
-      font-size: 22px;
       font-weight: bold;
-      border: 2px solid #fff;
       &:hover {
         background: rgba(255,255,255,0.1);
       }
@@ -123,6 +169,10 @@ section.services {
   @media (min-width: 1000px) {
     width: 1120px;
   }
+  img {
+    width: 230px;
+    height: 230px;
+  }
   .service {
     float: left;
     width: 22%;
@@ -133,7 +183,7 @@ section.services {
     border-radius: 3px;
     box-shadow: none;
     padding: 22px 26px;
-    width: 192px;
+    width: 80%;
   }
   .service_name {
     font-size: 24px;
